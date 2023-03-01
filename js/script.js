@@ -52,8 +52,8 @@ const tasks = [
     for (const task of tasks) {
       htmlString += `
         <li${task.done ? ' style="text-decoration: line-through;"' : ""}>
-          <button class="js-done">zrobione?</button>
-          <button class="js-remove">usuń</button>
+          <button class="button__done js-done">zrobione?</button>
+          <button class="button__remove js-remove">usuń</button>
           ${task.content}
         </li>
       `;
@@ -84,6 +84,8 @@ const tasks = [
     const form = document.querySelector(".js-form");
   
     form.addEventListener("submit", onFormSubmit);
+
+    document.querySelector(".js-newTask").focus();
   };
   
   init();

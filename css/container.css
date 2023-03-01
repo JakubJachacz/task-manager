@@ -1,0 +1,15 @@
+.container {
+    background-color: white;
+}
+
+.container__tasks {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 2px solid white;
+}
+
+.container__header {
+    padding: 20px;
+    margin-top: 15px;
+}
+

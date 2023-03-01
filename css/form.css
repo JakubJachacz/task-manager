@@ -1,0 +1,25 @@
+.form {
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.form__input {
+    border: 2px solid #eee;
+    padding: 5px;
+    overflow: auto;
+}
+
+.form__button {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.form__button:hover {
+    background-color: blue;
+}
