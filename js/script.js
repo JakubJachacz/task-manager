@@ -53,7 +53,7 @@ const render = () => {
     htmlString += `
       <li class="tasks__item">
       <button class="tasks__button--done js-done">${task.done ? "🗸" : ""}</button>
-      <div class="tasks__content"${task.done ? ' style="text-decoration: line-through;"' : ""}>${task.content}</div>
+      <span class="tasks__content"${task.done ? ' style="text-decoration: line-through;"' : ""}>${task.content}</span>
       <button class="tasks__button--remove js-remove">🗑</button>
     </li>
       `;

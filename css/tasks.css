@@ -1,6 +1,7 @@
 .tasks {
     padding: 20px;
     margin: 0px;
+    caret-color: transparent;
 }
 
 .tasks__item {
@@ -9,6 +10,7 @@
     align-self: center;
     padding: 10px;
     border-bottom: 1px solid white;
+    caret-color: transparent;
 }
 
 .tasks__content {
@@ -16,15 +18,51 @@
     font-size: 20px;
     border-bottom: 1px solid #eee;
 }
+
 .tasks__button--done {
     display: grid;
-    align-self: self-start;
-    padding 5px;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
     min-height: 30px;
     height: 30px;
     min-width: 30px;
     width: 30px;
     border: none;
     background-color: rgb(106, 155, 33);
-    font-size: 25px;
+    font-size: 20px;
+    color: white;
+    caret-color: transparent;
+    cursor: pointer;
+}
+
+.tasks__button--done:hover {
+    background-color:rgb(121, 185, 24);
+    transition: 0.5s;
+}
+
+.tasks__button--done:active {
+    background-color:rgb(135, 212, 20);
+    transition: 0.5s;
+}
+
+.tasks__button--remove {
+    background-color: red;
+    color: white;
+    border: none;
+    min-height: 30px;
+    height: 30px;
+    min-width: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.tasks__button--remove:hover {
+    background-color: hsl(0, 85%, 57%);
+    transition: 0.5s;
+}
+
+.tasks__button--remove:active {
+    background-color:hsl(0, 100%, 65%);
+    transition: 0.5s;
 }

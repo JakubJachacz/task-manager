@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     max-width: 1000px;
+    margin: auto;
 }
 
 *, ::after, ::before {
@@ -11,5 +12,6 @@ html {
     font-family: 'Lato', sans-serif;
     word-break: break-word;
     padding: 10px;
-    background-color: #eee
+    background-color: #eee;
+    margin: auto;
 }
