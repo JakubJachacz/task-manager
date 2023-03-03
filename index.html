@@ -18,16 +18,17 @@
 </head>
 
 <body class="body">
-    <h1>Lista zadań</h1>
+    <h1 class="container__header--first container__header--caret">Lista zadań</h1>
     <section class="container">
+        <h2 class="container__header container__header--caret">Dodaj nowe zadanie</h2>
         <form class="form js-form" action="">
-            <input class="form__input js-newTask" name="newTaskContent" type="text">
+            <input class="form__input js-newTask" name="newTaskContent" type="text" placeholder="Co jest do zrobienia?">
             <button class="form__button" type="submit">Dodaj zadanie</button>
         </form>
     </section>
     <section class="container">
         <header class="container__tasks">
-            <h2 class="container__header">Lista zadań</h2>
+            <h3 class="container__header--last container__header--caret">Lista zadań</h3>
             <div class="container__button"></div>
         </header>
         <ul class="tasks js-tasks"></ul>

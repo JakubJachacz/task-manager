@@ -8,8 +8,24 @@
     border-bottom: 2px solid white;
 }
 
+.container__header--first {
+    font-size: 35px;
+    margin-left: 15px;
+}
+
 .container__header {
     padding: 20px;
     margin-top: 15px;
+    border-bottom: 1px solid #eee;
 }
 
+.container__header--last {
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.container__header--caret {
+    caret-color: transparent;
+}
