@@ -7,6 +7,12 @@
     margin: 10px;
 }
 
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .form__input {
     border: 2px solid #eee;
     padding: 5px;
@@ -18,8 +24,14 @@
     color: white;
     padding: 5px;
     border: 1px solid white;
+    caret-color: transparent;
 }
 
 .form__button:hover {
-    background-color: blue;
+    cursor: pointer;
+}
+
+.form__button:active {
+    background-color: rgb(1, 168, 168);
+    border: 1px solid black;
 }

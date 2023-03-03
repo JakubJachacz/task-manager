@@ -43,6 +43,7 @@
 
 .tasks__button--done:active {
     background-color:rgb(135, 212, 20);
+    border: 1px solid black;
     transition: 0.5s;
 }
 
@@ -64,5 +65,6 @@
 
 .tasks__button--remove:active {
     background-color:hsl(0, 100%, 65%);
+    border: 1px solid black;
     transition: 0.5s;
 }

@@ -84,7 +84,9 @@ const init = () => {
   const form = document.querySelector(".js-form");
 
   form.addEventListener("submit", onFormSubmit);
+};
 
+const setFocus = () => {
   document.querySelector(".js-newTask").focus();
 };
 
