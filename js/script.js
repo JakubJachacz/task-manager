@@ -1,4 +1,4 @@
-const tasks = [
+let tasks = [
   {
     content: "zrobić task manager",
     done: false,
@@ -10,21 +10,30 @@ const tasks = [
 ];
 
 const addNewTask = (newTaskContent) => {
-  tasks.push({
+  const newTask = {
     content: newTaskContent,
     done: false,
-  });
+  };
+
+  tasks = [...tasks, newTask];
 
   render();
 };
 
 const removeTask = (taskIndex) => {
-  tasks.splice(taskIndex, 1);
+  const newTasks = [...tasks];
+  newTasks.splice(taskIndex, 1);
+  tasks = newTasks;
   render();
 };
 
 const toggleTaskDone = (taskIndex) => {
-  tasks[taskIndex].done = !tasks[taskIndex].done;
+  const newTasks = [...tasks];
+  newTasks[taskIndex] = {
+    ...newTasks[taskIndex],
+    done: !newTasks[taskIndex].done,
+  };
+  tasks = newTasks;
   render();
 };
 
