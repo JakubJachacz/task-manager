@@ -7,29 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/tasks.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
-    <h1 class="container__header--first container__header--caret">Lista zadań</h1>
-    <section class="container">
-        <h2 class="container__header container__header--caret">Dodaj nowe zadanie</h2>
+    <h1 class="header header--caret">Lista zadań</h1>
+    <section class="section">
+        <h2 class="section__header header--caret">Dodaj nowe zadanie</h2>
         <form class="form js-form" action="">
             <input class="form__input js-newTask" name="newTaskContent" type="text" placeholder="Co jest do zrobienia?">
             <button class="form__button" type="submit" onclick="setFocus()">Dodaj zadanie</button>
         </form>
     </section>
-    <section class="container">
-        <header class="container__tasks">
-            <h3 class="container__header--last container__header--caret">Lista zadań</h3>
-            <div class="container__button"></div>
+    <section class="section">
+        <header class="section__title">
+            <h3 class="section__title header--caret">Lista zadań</h3>
+            <div class="buttons js-buttons"></div>
         </header>
         <ul class="tasks js-tasks"></ul>
     </section>
