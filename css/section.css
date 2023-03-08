@@ -5,7 +5,10 @@
 .section__title {
     display: grid;
     grid-template-columns: 1fr auto;
-    border-bottom: 2px solid white;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
 }
 
 .header {
@@ -16,13 +19,6 @@
 .section__header {
     padding: 20px;
     margin-top: 15px;
-    border-bottom: 1px solid #eee;
-}
-
-.section__title {
-    font-size: 25px;
-    margin-left: 20px;
-    padding: 20px;
     border-bottom: 1px solid #eee;
 }
 
@@ -41,8 +37,17 @@
 }
 
 .buttons__button {
-    border: none;
-    background-color: white;
-    margin: 15px;
+    background-color: transparent;
     color: hsl(180, 100%, 25%);
+    border: none;
+    margin: 0 0 0 20px;
+    transition: 0.3s;
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.buttons__button:disabled {
+    color: #ccc;
 }

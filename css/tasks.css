@@ -19,6 +19,10 @@
     border-bottom: 1px solid #eee;
 }
 
+.tasks__content--done {
+    text-decoration: line-through;
+}
+
 .tasks__button--done {
     display: grid;
     align-self: center;
@@ -67,4 +71,8 @@
     background-color:hsl(0, 100%, 65%);
     border: 1px solid black;
     transition: 0.5s;
+}
+
+.tasks__item--hidden {
+    display: none;
 }
